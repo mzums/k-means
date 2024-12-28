@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>K-Means Clustering</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>    
+<body>
+    <h1>K-Means Clustering on Image</h1>
+    
+    <div class="form-container">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="image">Upload an image:</label>
+            <input type="file" name="image" id="image" required>
+
+            <label for="clusters">Number of clusters (k):</label>
+            <input type="number" name="clusters" id="clusters" value="3" min="2">
+
+            <button type="submit">Process</button>
+        </form>
+    </div>
+
+    <div class="image-container">
+        <img src="/static/blahaj.jpg" alt="Original Image">
+        <div class="arrow">→</div>
+        <img src="/static/segmented_blahaj.png" alt="Segmented Image">
+    </div>
+
+    <div class="image-container">
+        <img src="/static/sunset.jpg" alt="Original Image">
+        <div class="arrow">→</div>
+        <img src="/static/segmented_sunset.png" alt="Segmented Image">
+    </div>
+</body>
+</html>
