@@ -24,7 +24,7 @@ This project provides a web-based interface for performing K-Means clustering on
 1. Clone this repository:
    ```bash
    git clone https://github.com/mzums/k-means
-   cd <repository-folder>
+   cd k-means
    ```
 
 2. Create a virtual environment:
